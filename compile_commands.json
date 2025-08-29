@@ -1,0 +1,54 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "bfs",
+      "src/bfs.c"
+    ],
+    "directory": "/home/tomek/c/bfs",
+    "file": "/home/tomek/c/bfs/src/bfs.c",
+    "output": "/home/tomek/c/bfs/bfs"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "bfs",
+      "src/graph.c"
+    ],
+    "directory": "/home/tomek/c/bfs",
+    "file": "/home/tomek/c/bfs/src/graph.c",
+    "output": "/home/tomek/c/bfs/bfs"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "bfs",
+      "src/node.c"
+    ],
+    "directory": "/home/tomek/c/bfs",
+    "file": "/home/tomek/c/bfs/src/node.c",
+    "output": "/home/tomek/c/bfs/bfs"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Iinclude",
+      "-o",
+      "bfs",
+      "src/queue.c"
+    ],
+    "directory": "/home/tomek/c/bfs",
+    "file": "/home/tomek/c/bfs/src/queue.c",
+    "output": "/home/tomek/c/bfs/bfs"
+  }
+]
