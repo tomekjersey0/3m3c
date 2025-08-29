@@ -1,28 +1,10 @@
 #include <stdio.h>
 #include <assert.h>
+#include "state.h"
+#include "vis.h"
 #include "bfs.h"
 #include "graph.h"
 
-typedef struct Move {
-    int m_count;
-    int c_count;
-} Move;
-
-typedef struct Side {
-    int m_count;
-    int c_count;
-} Side;
-
-typedef enum BoatSide {
-    BOAT_SIDE_LEFT = 0,
-    BOAT_SIDE_RIGHT = 1
-} BoatSide;
-
-typedef struct State {
-    Side left;
-    Side right;
-    BoatSide boatSide;
-} State;
 
 int isValid(State s) {
     // no negatives
@@ -174,6 +156,8 @@ int main() {
             printf("step [%ld]: boat moved %d canniba%s and %d missionar%s from %s\n", i+1, movedC, (movedC > 1) ? "ls" : "l", movedM, (movedM > 1) ? "ies" : "y", movement);
     }
     printf("and you're done!");
+
+    write_dot(graph, "mc_graph.dot", &p);
 
     p.freePath(&p);
     return 0;
