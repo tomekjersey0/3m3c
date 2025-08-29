@@ -155,7 +155,7 @@ int main() {
         else
             printf("step [%ld]: boat moved %d canniba%s and %d missionar%s from %s\n", i+1, movedC, (movedC > 1) ? "ls" : "l", movedM, (movedM > 1) ? "ies" : "y", movement);
     }
-    printf("and you're done!");
+    printf("and you're done!\n");
 
     write_dot(graph, "mc_graph.dot", &p);
 
